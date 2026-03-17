@@ -8,10 +8,11 @@
   let config = $state<{ api_key: string; theme: string; courses_dir: string } | null>(null);
 
   onMount(async () => {
+    const exists = await invoke<boolean>("config_exists");
     const c = await invoke<{ api_key: string; theme: string; courses_dir: string }>("load_config");
     document.documentElement.setAttribute("data-theme", c.theme || "dark");
 
-    if (c.api_key) {
+    if (exists) {
       goto("/courses");
       return;
     }

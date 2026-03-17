@@ -124,7 +124,6 @@
     <button
       class="save-btn"
       onclick={save}
-      disabled={!apiKey}
       class:saved
     >
       {#if saved}

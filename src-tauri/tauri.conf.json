@@ -12,9 +12,11 @@
   "app": {
     "windows": [
       {
-        "title": "rooster-learner",
-        "width": 800,
-        "height": 600
+        "title": "Rooster Learner",
+        "fullscreen": false,
+        "maximized": true,
+        "width": 1200,
+        "height": 800
       }
     ],
     "security": {
