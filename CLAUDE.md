@@ -1,0 +1,2 @@
+This is Tauri repo for rooster learner an llm harness for building courses and learning with an llm. 
+I want courses to be built out using the filesystem. We need a top level config that says light mode/dark mode and where the course folder is. Then we go into the course folder and find courses. A course is a folder with a top level yaml that shows the directory essentially and has data on what's been completed. and in the folder html pages with the info.
